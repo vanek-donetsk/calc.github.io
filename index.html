@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Titles -->
+	<title>Document</title>
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- FavIcon -->
+	<link rel="icon" href="img/favicon.png"  type="image/x-icon" />
+
+
+
+</head>
+<body>
+
+		<!-- Здесь пишем код -->
+
+	<section>
+		<div class="container">
+			<h1 class = "display-3 text-center">Акция! Обменяй свою почку на новенький мощный ПК!</h1>
+			<div class="row">
+				<div class="col-4">
+					<div class="card-images text-center">
+						<img src="img/1.png" alt="" id="photo_1">
+						<img src="img/2.png" alt="" id="photo_2">
+						<img src="img/3.png" alt="" id="photo_3">
+						<img src="img/4.png" alt="" id="photo_4">
+						<img src="img/5.png" alt="" id="photo_5">
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="calc">
+						<h4 class = "display-6">Мониторы</h4>
+						<select class="form-control" name="monitor" id="monitor">
+							<option value="Samsung Curved C27F396F" m_system-photo="1" monitor_price ="15999">Samsung Curved C27F396F</option>
+							<option value="LG 24MP68VQ-P" m_system-photo="2" monitor_price ="25000">LG 24MP68VQ-P</option>
+							<option value="Samsung S24D300HS" m_system-photo="3" monitor_price ="17000">Samsung S24D300HS</option>
+							<option value="Samsung Curved C24F396F" m_system-photo="4" monitor_price ="20000">Samsung Curved C24F396F</option>
+							<option value="Samsung Curved" m_system-photo="5" monitor_price ="19999">Samsung Curved</option>
+						</select><br>
+
+						<h4 class = "display-6">Системники</h4>
+						<select class="form-control" name="system_unit" id="system_unit">
+							<option value="ARTLINE Home H43 v09 (H43v09)" system-photo="1" system-unit-price = "200000">ARTLINE Home H43 v09 (H43v09)</option>
+							<option value="ARTLINE Business B35 v03 (B35v03)" system-photo="2" system-unit-price = "348574">ARTLINE Business B35 v03 (B35v03)</option>
+							<option value="ARTLINE Business B29 v10 (B29v10)" system-photo="3" system-unit-price = "594833">ARTLINE Business B29 v10 (B29v10)</option>
+							<option value="ARTLINE Business B27 v11 (B27v11)" system-photo="4" system-unit-price = "799493">ARTLINE Business B27 v11 (B27v11)</option>
+							<option value="ARTLINE Home H37 v01 (H37v01)" system-photo="5" system-unit-price = "694483">ARTLINE Home H37 v01 (H37v01)</option>
+						</select><br>
+
+						<h4 class = "text-danger display-5"><small>Итог</small> <br>Стоимость</h4>
+						<p class = "price">
+							<span id = "final_price">0</span> руб.
+						</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="card-images-m text-center">
+						<img src="img/m1.png" alt="" id="m_photo_1">
+						<img src="img/m2.png" alt="" id="m_photo_2">
+						<img src="img/m3.png" alt="" id="m_photo_3">
+						<img src="img/m4.png" alt="" id="m_photo_4">
+						<img src="img/m5.png" alt="" id="m_photo_5">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Библиотека jQuery - необходима для Bootstrap плагинов -->
+	<script src="libs/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap JS скрипты -->
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Собственные JS скрипты -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
