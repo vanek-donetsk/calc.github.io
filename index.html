@@ -29,7 +29,51 @@
 	<section>
 		<div class="container">
 			<h1 class = "display-3 text-center">Акция! Обменяй свою почку на новенький мощный ПК!</h1>
+			<div class="col-4">
+				<div class="calc">
+					<h4 class = "display-6">Мониторы</h4>
+					<select class="form-control" name="monitor" id="monitor">
+						<option value="Samsung Curved C27F396F" m_system-photo="1" monitor_price ="15999">Samsung Curved C27F396F</option>
+						<option value="LG 24MP68VQ-P" m_system-photo="2" monitor_price ="25000">LG 24MP68VQ-P</option>
+						<option value="Samsung S24D300HS" m_system-photo="3" monitor_price ="17000">Samsung S24D300HS</option>
+						<option value="Samsung Curved C24F396F" m_system-photo="4" monitor_price ="20000">Samsung Curved C24F396F</option>
+						<option value="Samsung Curved" m_system-photo="5" monitor_price ="19999">Samsung Curved</option>
+					</select><br>
+
+					<h4 class = "display-6">Системники</h4>
+					<select class="form-control" name="system_unit" id="system_unit">
+						<option value="ARTLINE Home H43 v09 (H43v09)" system-photo="1" system-unit-price = "200000">ARTLINE Home H43 v09 (H43v09)</option>
+						<option value="ARTLINE Business B35 v03 (B35v03)" system-photo="2" system-unit-price = "348574">ARTLINE Business B35 v03 (B35v03)</option>
+						<option value="ARTLINE Business B29 v10 (B29v10)" system-photo="3" system-unit-price = "594833">ARTLINE Business B29 v10 (B29v10)</option>
+						<option value="ARTLINE Business B27 v11 (B27v11)" system-photo="4" system-unit-price = "799493">ARTLINE Business B27 v11 (B27v11)</option>
+						<option value="ARTLINE Home H37 v01 (H37v01)" system-photo="5" system-unit-price = "694483">ARTLINE Home H37 v01 (H37v01)</option>
+					</select><br>
+
+					<h4 class = "display-6">Клавиатура</h4>
+					<select class="form-control" name="keyword_key" id="keyword_key">
+						<option value="Logitech K280e USB Black (920-005215)" key-photo="1" keyword-price = "2300">Logitech K280e USB Black (920-005215)</option>
+						<option value="Logitech K270 Black (920-003757)" k_system-photo="2" keyword-price = "1400">Logitech K270 Black (920-003757)</option>
+						<option value="Razer BlackWidow 2014 Expert USB Black (RZ03-00393400-R3R1)" k_system-photo="3" keyword-price = "2500">Razer BlackWidow 2014 Expert USB Black (RZ03-00393400-R3R1)</option>
+						<option value="Roccat Ryos MK Glow Cherry MX Blue U"k_ system-photo="4" keyword-price = "3000">Roccat Ryos MK Glow Cherry MX Blue U</option>
+						<option value="A4Tech KV-300H USB Grey/Black (4711421846707)" k_system-photo="5" keyword-price = "2000">A4Tech KV-300H USB Grey/Black (4711421846707)</option>
+					</select><br>
+
+					<h4 class = "text-danger display-5"><small>Итог</small> <br>Стоимость</h4>
+					<p class = "price">
+						<span id = "final_price">0</span> руб.
+					</p>
+				</div>
+			</div>
 			<div class="row">
+				<div class="col-4">
+					<div class="card-images-m text-center">
+						<img src="img/m1.png" alt="" id="m_photo_1">
+						<img src="img/m2.png" alt="" id="m_photo_2">
+						<img src="img/m3.png" alt="" id="m_photo_3">
+						<img src="img/m4.png" alt="" id="m_photo_4">
+						<img src="img/m5.png" alt="" id="m_photo_5">
+					</div>
+				</div>
 				<div class="col-4">
 					<div class="card-images text-center">
 						<img src="img/1.png" alt="" id="photo_1">
@@ -40,38 +84,12 @@
 					</div>
 				</div>
 				<div class="col-4">
-					<div class="calc">
-						<h4 class = "display-6">Мониторы</h4>
-						<select class="form-control" name="monitor" id="monitor">
-							<option value="Samsung Curved C27F396F" m_system-photo="1" monitor_price ="15999">Samsung Curved C27F396F</option>
-							<option value="LG 24MP68VQ-P" m_system-photo="2" monitor_price ="25000">LG 24MP68VQ-P</option>
-							<option value="Samsung S24D300HS" m_system-photo="3" monitor_price ="17000">Samsung S24D300HS</option>
-							<option value="Samsung Curved C24F396F" m_system-photo="4" monitor_price ="20000">Samsung Curved C24F396F</option>
-							<option value="Samsung Curved" m_system-photo="5" monitor_price ="19999">Samsung Curved</option>
-						</select><br>
-
-						<h4 class = "display-6">Системники</h4>
-						<select class="form-control" name="system_unit" id="system_unit">
-							<option value="ARTLINE Home H43 v09 (H43v09)" system-photo="1" system-unit-price = "200000">ARTLINE Home H43 v09 (H43v09)</option>
-							<option value="ARTLINE Business B35 v03 (B35v03)" system-photo="2" system-unit-price = "348574">ARTLINE Business B35 v03 (B35v03)</option>
-							<option value="ARTLINE Business B29 v10 (B29v10)" system-photo="3" system-unit-price = "594833">ARTLINE Business B29 v10 (B29v10)</option>
-							<option value="ARTLINE Business B27 v11 (B27v11)" system-photo="4" system-unit-price = "799493">ARTLINE Business B27 v11 (B27v11)</option>
-							<option value="ARTLINE Home H37 v01 (H37v01)" system-photo="5" system-unit-price = "694483">ARTLINE Home H37 v01 (H37v01)</option>
-						</select><br>
-
-						<h4 class = "text-danger display-5"><small>Итог</small> <br>Стоимость</h4>
-						<p class = "price">
-							<span id = "final_price">0</span> руб.
-						</p>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="card-images-m text-center">
-						<img src="img/m1.png" alt="" id="m_photo_1">
-						<img src="img/m2.png" alt="" id="m_photo_2">
-						<img src="img/m3.png" alt="" id="m_photo_3">
-						<img src="img/m4.png" alt="" id="m_photo_4">
-						<img src="img/m5.png" alt="" id="m_photo_5">
+					<div class="card-images-k text-center">
+						<img src="img/k1.jpg" alt="" id="keyword_1">
+						<img src="img/k2.jpg" alt="" id="keyword_2">
+						<img src="img/k3.jpg" alt="" id="keyword_3">
+						<img src="img/k4.jpg" alt="" id="keyword_4">
+						<img src="img/k5.jpg" alt="" id="keyword_5">
 					</div>
 				</div>
 			</div>

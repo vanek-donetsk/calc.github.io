@@ -33,10 +33,28 @@ switch (y1) {
 	default:
 }
 })
+
+$("#keyword_key").change(function(){
+var x2 = $("#keyword_key option:selected").val();
+//alert(x);
+//console.log(x);
+var y2 = $("#keyword_key option:selected").attr("key-photo");
+console.log(y2);
+$(".card-images-k img").hide();
+switch (y2) {
+	case "1": $("keyword_1").show("slow");	break;
+	case "2": $("keyword_2").show("slow");	break;
+	case "3": $("keyword_3").show("slow");	break;
+	case "4": $("keyword_4").show("slow");	break;
+	case "5": $("keyword_5").show("slow");	break;
+	default:
+}
+})
 $(".calc select").change(function(){
 var monitor_p = $("#monitor option:selected").attr("monitor_price");
 var system_unit_p = $("#system_unit option:selected").attr("system-unit-price");
-var final_price = parseInt(monitor_p) + parseInt(system_unit_p);
+var keyword_p = $("#keyword_key option:selected").attr("keyword-price");
+var final_price = parseInt(monitor_p) + parseInt(system_unit_p)+ parseInt(keyword_p);
 
 $("#final_price").text(final_price);
 })//$(".calc select").change(function(){

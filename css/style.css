@@ -87,6 +87,10 @@ input[type="submit"] {
 .card-images img, .card-images-m img {
   display: none;
 }
-#photo_1, #m_photo_1{
+
+.card-images img, .card-images-k img {
+  display: none;
+}
+#photo_1, #m_photo_1, #keyword_1{
   display: inline-block;
 }
