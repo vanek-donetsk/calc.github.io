@@ -42,11 +42,11 @@ var y2 = $("#keyword_key option:selected").attr("key-photo");
 console.log(y2);
 $(".card-images-k img").hide();
 switch (y2) {
-	case "1": $("keyword_1").show("slow");	break;
-	case "2": $("keyword_2").show("slow");	break;
-	case "3": $("keyword_3").show("slow");	break;
-	case "4": $("keyword_4").show("slow");	break;
-	case "5": $("keyword_5").show("slow");	break;
+	case "1": $("#keyword_1").show("slow");	break;
+	case "2": $("#keyword_2").show("slow");	break;
+	case "3": $("#keyword_3").show("slow");	break;
+	case "4": $("#keyword_4").show("slow");	break;
+	case "5": $("#keyword_5").show("slow");	break;
 	default:
 }
 })
